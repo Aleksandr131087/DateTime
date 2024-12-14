@@ -69,7 +69,7 @@ private lateinit var daysUntilBirthdayTextView: TextView
         if (birthDateString != null) {
             val birthDate = LocalDate.parse(birthDateString, DateTimeFormatter.ofPattern("dd.MM.yyyy"))
             val daysUntilBirthday = calculateDaysUntilBirthday(birthDate)
-            daysUntilBirthdayTextView.text = "Дней до дня рождения: $daysUntilBirthday"
+            daysUntilBirthdayTextView.text = "Осталось до ДР: $daysUntilBirthday дней(дня)"
         }
     }
 
